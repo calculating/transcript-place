@@ -26,16 +26,16 @@
 <p>3. Go to inspect element, and then click on the console tab</p>
 <p>4. In the console you can paste the script below to get a link with everything pre-filled</p></b>
 <p><code>
-asdf = window.location.href.toString();
-if (!asdf.includes('?')) {
-asdf += '?';
+urlString = window.location.href.toString();
+if (!urlString.includes('?')) {
+urlString += '?';
 };
 Array.from(document.querySelectorAll('[jsname="o6bZLc"]')[0].getElementsByTagName("input")).forEach((element) => {
 if (element.value !== '') {
-asdf += '&' + element.name + '=' + element.value.replaceAll(' ','+');
+urlString += '&' + element.name + '=' + element.value.replaceAll(' ','+');
 };
 });
-console.log(asdf);
+console.log(urlString);
 </code></p>
   </body>
   </html>
