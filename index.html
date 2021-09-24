@@ -28,14 +28,14 @@
 <p><code>
 asdf = window.location.href.toString();
 if (!asdf.includes('?')) {
-asdf += '?'
-}
+asdf += '?';
+};
 Array.from(document.querySelectorAll('[jsname="o6bZLc"]')[0].getElementsByTagName("input")).forEach((element) => {
 if (element.value !== '') {
 asdf += '&' + element.name + '=' + element.value.replaceAll(' ','+');
-}
-})
-console.log(asdf)
+};
+});
+console.log(asdf);
 </code></p>
   </body>
   </html>
