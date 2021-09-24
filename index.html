@@ -20,11 +20,11 @@
 <body>
 <h1>Autofill repetitive transcript request form questions</h1>
 <p>Google forms actually come with a cool feature to get a link with a pre-filled form, but it's generally restricted to form editors and not responders. You can use this method to get a pre-filled form link that helps you get through transcript request forms a bit faster. This also works with any other google form, so repetitive attendance etc could also work.</p>
-<p>Steps:</p>
+ <b><p>Steps:</p>
 <p>1. Go to the transcript request <a title="Transcript request" href="https://docs.google.com/forms/d/e/1FAIpQLSeIvHpsnlWaxeKwSrfwI53j4dZX9RxH0LISgMaAPvgY8-hpzg/viewform">google form</a></p>
-<p>2. Fill in all of the non-college-specific information, remember that application type, mailing address, etc change from school to school. This just removes the need to re-type your name and such every single time</p>
+<p>2. Fill in all of the non-college-specific information
 <p>3. Go to inspect element, and then click on the console tab</p>
-<p>4. In the console you can paste the script below to get a link with everything pre-filled</p>
+<p>4. In the console you can paste the script below to get a link with everything pre-filled</p></b>
 <p><code>
 aVeryCoolVariableName = window.location.href.toString();
 if (!aVeryCoolVariableName.includes('?')) {
