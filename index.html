@@ -26,16 +26,16 @@
 <p>3. Go to inspect element, and then click on the console tab</p>
 <p>4. In the console you can paste the script below to get a link with everything pre-filled</p></b>
 <p><code>
-aVeryCoolVariableName = window.location.href.toString();
-if (!aVeryCoolVariableName.includes('?')) {
-aVeryCoolVariableName += '?'
+asdf = window.location.href.toString();
+if (!asdf.includes('?')) {
+asdf += '?'
 }
-Array.from(document.querySelectorAll('[jsname="o6bZLc"]')[0].getElementsByTagName("input")).forEach((element) =&gt; {
+Array.from(document.querySelectorAll('[jsname="o6bZLc"]')[0].getElementsByTagName("input")).forEach((element) => {
 if (element.value !== '') {
-aVeryCoolVariableName += '&amp;' + element.name + '=' + element.value.replaceAll(' ','+');
+asdf += '&' + element.name + '=' + element.value.replaceAll(' ','+');
 }
 })
-console.log(aVeryCoolVariableName)
+console.log(asdf)
 </code></p>
   </body>
   </html>
